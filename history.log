@@ -1,0 +1,301 @@
+    1  \n\nsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"\n
+    2  1
+    3  ZSH= sh install.sh
+    4  bash
+    5  nano .zshrc
+    6  ls
+    7  cd /etc
+    8  ls
+    9  cd ..
+   10  cd
+   11  cd ..
+   12  cd /etc
+   13  clear
+   14  cd
+   15  activate-global-python-argcomplete
+   16  pip install argcomplete
+   17  activate-global-python-argcomplete
+   18  clear
+   19  no
+   20  false
+   21  true
+   22  false
+   23  clear
+   24  y
+   25  yes
+   26  exit
+   27  ls
+   28  puthon
+   29  fuck
+   30  thefuck
+   31  pip install thefuck
+   32  fuck
+   33  pip remove thefuck
+   34  pip 
+   35  pip uninstall thefuck
+   36  pip install thefuck
+   37  fuck
+   38  $PATH
+   39  env PATH
+   40  nano .zshrc
+   41  exit
+   42  fuck
+   43  ex it
+   44  puthon
+   45  fuck
+   46  python
+   47  cat /etc/kernel/install.d
+   48  cat /etc/ssh/sshd_config
+   49  fuck
+   50  apt update
+   51  fuck
+   52  sudo apt update
+   53  !
+   54  ?
+   55  !
+   56  ansible
+   57  ansible --list-hosts
+   58  ansible --list-hosts all
+   59  mkdir /etc/ansible
+   60  fuck
+   61  sudo mkdir /etc/ansible
+   62  sudo nano /etc/ansible/hosts
+   63  clear
+   64  na
+   65  nano /etc/ansible/hosts
+   66  fuck
+   67  sudo nano /etc/ansible/hosts
+   68  ansible --list-hosts all
+   69  ansible all
+   70  ansible all --list-hosts
+   71  ansible all -m ping
+   72  ssh-copy-id chris@srv-ansible-node1
+   73  ssh-keygen
+   74  ssh-copy-id chris@srv-ansible-node1
+   75  cat .ssh/id_rsa.pub
+   76  ansible all -m ping
+   77  history
+   78  ls
+   79  curl 192.168.10.210:8006
+   80  ls
+   81  ping 192.168.10.210
+   82  exit
+   83  ansible
+   84  ansible all test
+   85  ansible all -m ping
+   86  ls
+   87  mkdir playbooks
+   88  cd playbooks
+   89  history
+   90  bash
+   91  ansible all -m ping
+   92  hx
+   93  helix
+   94  bash
+   95  nano first_playbook.yml
+   96  nano first_playbook.yaml
+   97  ansible-playbook first_playbook.yaml
+   98  cp first_playbook.yaml installDocker.yaml
+   99  nano installDocker.yaml
+  100  exit
+  101  cd playbooks
+  102  nano installDocker.yaml
+  103  git init
+  104  git add remote
+  105  git remote add
+  106  git remote add origin github.com/chrellrich/ansible-playbooks.git
+  107  git add installDocker.yaml first_playbook.yaml
+  108  git commit -m "initial commit"
+  109  gh
+  110  git config --global user.email "chris@ellri.ch"
+  111  git config --global user.name "Chris Ellrich"
+  112  git commit -m "initial commit"
+  113  git push
+  114  git push --set-upstream origin master
+  115  cd ..
+  116  cd playbooks
+  117  ls
+  118  rm -rf .git
+  119  ls
+  120  echo "# ansible-playbooks" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:chrellrich/ansible-playbooks.git\ngit push -u origin main
+  121  sudo apt install github
+  122  sudo apt install gh
+  123  gh
+  124  gh login
+  125  gh auth
+  126  gh auth login
+  127  git push -u origin main
+  128  cd .
+  129  cd
+  130  cat .ssh/id_rsa
+  131  cat .ssh/id_rsa.pub
+  132  cd playbooks
+  133  git push -u origin main
+  134  git add installDocker.yaml first_playbook.yaml
+  135  git commit -m "added playbooks"
+  136  git push
+  137  nano installDocker.yaml
+  138  ansible-playbook installDocker.yaml
+  139  ansible-playbook installDocker.yaml --ask-sudo-pass
+  140  ansible-playbook --ask-sudo-pass installDocker.yaml
+  141  ansible-playbook -K installDocker.yaml
+  142  nano installDocker.yaml
+  143  ansible-playbook -K installDocker.yaml
+  144  nano installDocker.yaml
+  145  ansible-playbook -K installDocker.yaml
+  146  nano installDocker.yaml
+  147  ansible-playbook -K installDocker.yaml
+  148  nano installDocker.yaml
+  149  ansible-playbook -K installDocker.yaml
+  150  nano installDocker.yaml
+  151  ansible-playbook -K installDocker.yaml
+  152  git add installDocker.yaml
+  153  git commit -m "fixed docker install"
+  154  git push
+  155  git status
+  156  ls
+  157  cat installDocker.yaml.save
+  158  rm installDocker.yaml.save
+  159  ls
+  160  cp installDocker.yaml setupContainers.yaml
+  161  nano setupContainers.yaml
+  162  ansible-galaxy collection list
+  163  nano setupContainers.yaml
+  164  ansible-playbook -K setupContainers.yaml
+  165  curl srv-ansible-node1
+  166  curl srv-ansible-node2
+  167  nano setupContainers.yaml
+  168  cp setupContainers.yaml stopWhoamiContainer.yaml
+  169  nano s
+  170  nano stopWhoamiContainer.yaml
+  171  nano setupContainers.yaml
+  172  ansible-playbook stopWhoamiContainer.yaml
+  173  ansible-playbook -K stopWhoamiContainer.yaml
+  174  curl srv-ansible-node2
+  175  curl -sfL https://get.k3s.io | sh -
+  176  cat /var/lib/rancher/k3s/server/node-token
+  177  sudo cat /var/lib/rancher/k3s/server/node-token
+  178  ufw disable
+  179  sudo ufw disable
+  180  kubectl
+  181  kubectl cluster-info
+  182  sudo kubectl cluster-info
+  183  sudo kubectl describe
+  184  sudo kubectl describe -help
+  185  sudo kubectl describe --help
+  186  sudo kubectl describe nodes
+  187  sudo kubectl nodes
+  188  sudo kubectl node
+  189  sudo kubectl list
+  190  sudo kubectl get nodes
+  191  helm repo add rancher-latest https://releases.rancher.com/server-charts/latest
+  192  sudo apt install helm
+  193  sudo apt install kubernetes-helm
+  194  brew
+  195  sudo apt install brew
+  196  sudo apt get update
+  197  sudo apt update
+  198  sudo apt install brew
+  199  sudo apt install helm
+  200  snap install helm
+  201  sudo snap install helm
+  202  sudo snap install helm --classic
+  203  helm repo add rancher-latest https://releases.rancher.com/server-charts/latest
+  204  helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
+  205  kubectl create namespace cattle-system
+  206  sudo kubectl create namespace cattle-system
+  207  sudo chmod 644 /etc/rancher/k3s/k3s.yaml
+  208  # If you have installed the CRDs manually instead of with the `--set installCRDs=true` option added to your Helm install command, you should upgrade your CRD resources before upgrading the Helm chart:\nkubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/\<VERSION\>/cert-manager.crds.yaml\n\n# Add the Jetstack Helm repository\nhelm repo add jetstack https://charts.jetstack.io\n\n# Update your local Helm chart repository cache\nhelm repo update\n\n# Install the cert-manager Helm chart\nhelm install cert-manager jetstack/cert-manager \\n  --namespace cert-manager \\n  --create-namespace
+  209  # If you have installed the CRDs manually instead of with the `--set installCRDs=true` option added to your Helm install command, you should upgrade your CRD resources before upgrading the Helm chart:\nkubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/1.14/cert-manager.crds.yaml\n\n# Add the Jetstack Helm repository\nhelm repo add jetstack https://charts.jetstack.io\n\n# Update your local Helm chart repository cache\nhelm repo update\n\n# Install the cert-manager Helm chart\nhelm install cert-manager jetstack/cert-manager \\n  --namespace cert-manager \\n  --create-namespace
+  210  # If you have installed the CRDs manually instead of with the `--set installCRDs=true` option added to your Helm install command, you should upgrade your CRD resources before upgrading the Helm chart:\nkubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.4/cert-manager.crds.yaml\n\n# Add the Jetstack Helm repository\nhelm repo add jetstack https://charts.jetstack.io\n\n# Update your local Helm chart repository cache\nhelm repo update\n\n# Install the cert-manager Helm chart\nhelm install cert-manager jetstack/cert-manager \\n  --namespace cert-manager \\n  --create-namespace
+  211  kubectl get pods --namespace cert-manager
+  212  helm install cert-manager jetstack/cert-manager \\n  --namespace cert-manager \\n  --create-namespace
+  213  sudo helm install cert-manager jetstack/cert-manager \\n  --namespace cert-manager \\n  --create-namespace
+  214  export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+  215  sudo helm install cert-manager jetstack/cert-manager \\n  --namespace cert-manager \\n  --create-namespace
+  216  helm install cert-manager jetstack/cert-manager \\n  --namespace cert-manager \\n  --create-namespace
+  217  ll /etc/rancher/k3s/k3s.yaml
+  218  sudo chown /etc/rancher/k3s/k3s.yaml chris
+  219  sudo chown chris /etc/rancher/k3s/k3s.yaml
+  220  ll /etc/rancher/k3s/k3s.yaml
+  221  chmod -ra /etc/rancher/k3s/k3s.yaml 
+  222  chmod -r /etc/rancher/k3s/k3s.yaml 
+  223  ll /etc/rancher/k3s/k3s.yaml
+  224  chmod +r /etc/rancher/k3s/k3s.yaml 
+  225  ll /etc/rancher/k3s/k3s.yaml
+  226  man chmod
+  227  chmod a-r /etc/rancher/k3s/k3s.yaml 
+  228  ll /etc/rancher/k3s/k3s.yaml
+  229  chmod u+r /etc/rancher/k3s/k3s.yaml 
+  230  ll /etc/rancher/k3s/k3s.yaml
+  231  helm install cert-manager jetstack/cert-manager \\n  --namespace cert-manager \\n  --create-namespace
+  232  kubectl get pods --namespace cert-manager
+  233  helm install rancher rancher-stable/rancher \\n  --namespace cattle-system \\n  --set hostname=rancher.ellrich.internal \\n  --set bootstrapPassword=admin
+  234  helm install rancher rancher-stable/rancher \\n  --namespace cattle-system \\n  --set hostname=rancher.ellrich.internal \\n  --set bootstrapPassword=admin \\n--set global.cattle.psp.enabled=false
+  235  sh /usr/local/bin/k3s-uninstall.sh
+  236  curl -sfL https://get.k3s.io | INSTALL_K3S_VERSION=v1.27.11+k3s1 sh -
+  237  history
+  238  cat /var/lib/rancher/k3s/server/node-token
+  239  sudo cat /var/lib/rancher/k3s/server/node-token
+  240  history
+  241  sudo chown chris /etc/rancher/k3s/k3s.yaml
+  242  kubectl get nodes
+  243  # If you have installed the CRDs manually instead of with the `--set installCRDs=true` option added to your Helm install command, you should upgrade your CRD resources before upgrading the Helm chart:\nkubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.4/cert-manager.crds.yaml\n\n# Add the Jetstack Helm repository\nhelm repo add jetstack https://charts.jetstack.io\n\n# Update your local Helm chart repository cache\nhelm repo update\n\n# Install the cert-manager Helm chart\nhelm install cert-manager jetstack/cert-manager \\n  --namespace cert-manager \\n  --create-namespace
+  244  helm install rancher rancher-stable/rancher \\n  --namespace cattle-system \\n  --set hostname=rancher.ellrich.internal \\n  --set bootstrapPassword=admin
+  245  helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
+  246  kubectl create namespace cattle-system
+  247  helm install rancher rancher-stable/rancher \\n  --namespace cattle-system \\n  --set hostname=rancher.ellrich.internal \\n  --set bootstrapPassword=admin
+  248  kubectl -n cattle-system rollout status deploy/rancher
+  249  kubectl get pods
+  250  kubectl -n cattle-system get pods
+  251  sudo k3s kubectl get pods --all-namespaces
+  252  kubectl -n cattle-system get pods
+  253  kubectl -n cattle-system rollout status deploy/rancher
+  254  kubectl get nodes
+  255  ping srv-ansible-node1
+  256  exit
+  257  tailscale
+  258  tailscale up
+  259  sudo cale up
+  260  sudo tailscale up
+  261  sudo tailscale update
+  262  sudo tailscale up
+  263  sudo tailscale status
+  264  sudo tailscale 
+  265  sudo tailscale web
+  266  sudo tailscale server
+  267  sudo tailscale serve
+  268  sudo tailscale 
+  269  sudo tailscale exit-node
+  270  sudo tailscale exit-node -h
+  271  sudo tailscale exit-node list
+  272  sudo tailscale set
+  273  sudo tailscale set ---advertise-routes
+  274  sudo tailscale set ---advertise-routes 192.168.1.0/24
+  275  sudo tailscale set ---advertise-routes "192.168.1.0/24"
+  276  sudo tailscale set --advertise-routes "192.168.1.0/24"
+  277  sudo tailscale web
+  278  sudo tailscale set --advertise-routes "192.168.10.0/24"
+  279  sudo tailscale set --advertise-routes "192.168.10.0/24,192.168.178.0/24,192.168.20.0/24,192.168.42.0/24"
+  280  ls
+  281  cd playbooks
+  282  ls
+  283  cat installDocker.yaml
+  284  cat setupContainers.yaml
+  285  k3s 
+  286  kubectl 
+  287  kubectl cluster-info
+  288  kubectl describe 
+  289  kubectl describe nodes
+  290  kubectl describe 
+  291  exit
+  292  ls
+  293  cd playbooks
+  294  ls
+  295  cat setupContainers.yaml
+  296  git status
+  297  git add setupContainers.yaml
+  298  git add stopWhoamiContainer.yaml
+  299  git commit -m "Container controll playbooks"
+  300  git push
+  301  history
