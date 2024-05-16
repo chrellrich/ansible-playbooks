@@ -1,0 +1,12 @@
+---
+- name: Create whoami containers
+  hosts: all
+  become: yes
+  tasks:
+    - name: Create a whoami container
+      community.docker.docker_container:
+        name: whoami
+        image: traefik/whoami
+        state: present
+        ports:
+          - 80:80

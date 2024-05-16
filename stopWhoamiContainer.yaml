@@ -1,0 +1,9 @@
+---
+- name: Stop whoami containers
+  hosts: all
+  become: yes
+  tasks:
+    - name: Stop whoami container
+      community.docker.docker_container:
+        name: whoami
+        state: absent
